@@ -3,8 +3,8 @@
 ## Student Details
 
 * **Name:** Sahithya Kacharla
-* **Registration Number:** YOUR REGISTRATION NUMBER
-* **Section:** YOUR SECTION
+* **Registration Number:** 252U1R6106
+* **Section:** AIML 1B
 * **Course:** Backend Development Fundamentals
 * **Lab:** 01
 
