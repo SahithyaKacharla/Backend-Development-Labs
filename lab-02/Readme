@@ -1,0 +1,75 @@
+# Lab 2: SQLite Database and CRUD Operations
+
+## Student Details
+
+* **Name:** Sahithya Kacharla
+* **Registration Number:** 252U1R6106
+* **Section:** AIML 1B
+* **Course:** Backend Development Fundamentals
+* **Lab:** 02
+
+## Objective
+
+To develop a Book Management API using Node.js, Express.js and SQLite, implementing CRUD operations to manage book records.
+
+## Technologies Used
+
+* Node.js
+* Express.js
+* SQLite
+* JavaScript
+* Postman
+* VS Code
+
+## Database Structure
+
+Database Name: `books.db`
+
+Table Name: `book`
+
+| Column | Data Type           |
+| ------ | ------------------- |
+| id     | INTEGER PRIMARY KEY |
+| title  | TEXT                |
+| author | TEXT                |
+| price  | INTEGER             |
+| pages  | INTEGER             |
+
+## API Endpoints
+
+| HTTP Method | Endpoint        | Description              |
+| ----------- | --------------- | ------------------------ |
+| GET         | /books/         | Retrieve all books       |
+| GET         | /books/:bookId/ | Retrieve a specific book |
+| POST        | /books/         | Add a new book           |
+| PUT         | /books/:bookId/ | Update book details      |
+| DELETE      | /books/:bookId/ | Delete a book            |
+
+## CRUD Operations
+
+1. Create: Adds new book records.
+2. Read: Retrieves all books or a specific book.
+3. Update: Modifies existing book details.
+4. Delete: Removes a book from the database.
+
+## Screenshots
+
+Postman screenshots demonstrating all CRUD operations are available in the `screenshots` folder.
+
+## How to Run
+
+1. Install dependencies:
+
+   `npm install`
+
+2. Start the application:
+
+   `npm run dev`
+
+3. Open Postman and test the API endpoints using:
+
+   `http://localhost:3000`
+
+## Result
+
+Successfully developed and tested a Book Management API using Node.js, Express.js and SQLite. All five API endpoints were tested using Postman.
