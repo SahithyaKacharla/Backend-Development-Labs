@@ -1,0 +1,129 @@
+# Lab 3 – REST API, Query Parameters, Validation and Debugging
+
+## Student Details
+
+- **Name:** Sahithya Kacharla
+- **Registration Number:** 252U1R6106
+- **Section:** AIML 2B
+- **Course:** Backend Development Fundamentals
+
+## Project Overview
+
+This lab focuses on developing a REST API using Node.js and Express.js. The API manages book records and supports operations such as retrieving, adding, updating, and deleting books.
+
+It also implements query parameters, input validation, error handling, and debugging techniques.
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- SQLite
+- JavaScript
+- Postman
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone <your-github-repository-url>
+   ```
+
+2. Navigate to the Lab 3 folder:
+
+   ```bash
+   cd lab-03
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the server:
+
+   ```bash
+   node server.js
+   ```
+
+5. The server runs at:
+
+   ```text
+   http://localhost:3000
+   ```
+
+## API Endpoints
+
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| GET | `/books/` | Retrieve all books |
+| GET | `/books/?search_q=Python` | Search books by title |
+| GET | `/books/?order_by=price&order=DESC` | Sort books |
+| GET | `/books/?limit=3&offset=2` | Apply pagination |
+| GET | `/books/?min_price=200&max_price=500` | Filter books by price |
+| GET | `/books/:bookId/` | Retrieve a book by ID |
+| POST | `/books/` | Add a new book |
+| PUT | `/books/:bookId/` | Update an existing book |
+| DELETE | `/books/:bookId/` | Delete a book |
+
+## Features Implemented
+
+- RESTful API using Express.js.
+- Retrieve all books and individual book details.
+- Search books using query parameters.
+- Sort books by selected columns in ascending or descending order.
+- Pagination using `limit` and `offset`.
+- Filter books using minimum and maximum price.
+- Validate request body data before inserting or updating records.
+- Handle invalid inputs with appropriate error messages.
+- Return suitable HTTP status codes such as 200, 201, 400 and 404.
+- Use parameterized SQL queries to handle database operations safely.
+
+## Screenshots
+
+The following screenshots demonstrate the API requests and their responses tested using Postman.
+
+### 1. GET Requests
+Screenshots showing book retrieval, search, sorting, pagination and price filtering.
+
+### 2. POST Requests
+Screenshots showing successful book creation and validation errors.
+
+### 3. PUT Requests
+Screenshots showing successful book updates and error handling.
+
+### 4. DELETE Requests
+Screenshots showing successful book deletion and handling of non-existing book IDs.
+
+### Screenshot Files
+
+All Postman screenshots are available in the `screenshots/` folder.
+
+## Debugging and Error Handling
+
+The lab also covers identifying and fixing common backend development errors:
+
+- **EADDRINUSE:** Resolved port conflicts when starting the server.
+- **Incorrect Import Path:** Corrected module paths.
+- **No Such Table:** Identified and corrected database table-name issues.
+- **Missing Await:** Used `await` to handle asynchronous database operations correctly.
+
+## Learning Outcomes
+
+Through this lab, I learned how to:
+
+- Build REST APIs using Node.js and Express.js.
+- Work with HTTP methods and status codes.
+- Handle query parameters and filtering.
+- Validate user input.
+- Perform CRUD operations using SQLite.
+- Test APIs using Postman.
+- Debug common backend development errors.
+
+## Deployment
+
+**Live Deployment URL:** Not deployed. The API was tested locally using Postman.
+
+---
+**End of Lab 3**
